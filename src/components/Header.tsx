@@ -14,8 +14,9 @@ const Header = () => {
         animate={{ y: 0, opacity: 1 }}
         className=" px-4 py-2 max-w-[400px] mx-auto bg-gray-100/90 h-[50px] shadow-lg rounded-full flex justify-between items-center  z-[999]"
       >
-        {links.map((value) => (
+        {links.map((value,index) => (
           <div
+          key={index}
             className={clsx("px-3 py-1 relative rounded-full transition duration-800", {
               "bg-gray-400/20": active === value.name,
             })}

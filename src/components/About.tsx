@@ -38,7 +38,7 @@ const {ref}=useActive("About")
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy watching
+        <span className="italic">When I am not coding</span>, I enjoy watching
         movies, and reading books. I also enjoy{" "}
         <span className="font-medium">learning new things</span>
       </p>
