@@ -1,25 +1,30 @@
+"use client";
 
-"use client"
-import {motion} from 'framer-motion'
+import useActive from "@/hook/use-active";
+import { motion } from "framer-motion";
+
 
 const About = () => {
+const {ref}=useActive("About")
   return (
     <motion.section
-    //   ref={ref}
-      className="mb-20 max-w-[500px] mx-auto text-center leading-8 scroll-mt-28"
+      ref={ref}
+      className="mb-20 max-w-[500px] mx-auto text-center leading-8 scroll-mt-28 px-4 sm:px-0"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration:0.5 , amount: 0.5 }}
+      transition={{ duration: 0.5 }}
       viewport={{
         once: true,
       }}
       id="about"
     >
-      <h3 className='text-3xl font-medium capitalize mb-8 text-center'>About me</h3>
+      <h3 className="text-3xl font-medium capitalize mb-8 text-center">
+        About me
+      </h3>
       <p className="mb-3">
-         I am{" "}
-        <span className="font-medium">Software enginnering</span>student in addis abab university.
-        <span className="italic">{" "} My favorite part of programming</span> is the
+        I am <span className="font-medium">Software enginnering</span> student
+        in Addis Ababa university.
+        <span className="italic"> My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
@@ -33,11 +38,12 @@ const About = () => {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy watching movies, and reading books. I also enjoy{" "}
+        <span className="italic">When I'm not coding</span>, I enjoy watching
+        movies, and reading books. I also enjoy{" "}
         <span className="font-medium">learning new things</span>
       </p>
     </motion.section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

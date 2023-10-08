@@ -1,6 +1,7 @@
-import corpcommentImg from "../../public/corpcomment.png";
-import rmtdevImg from '../../public/rmtdev.png'
-import wordanalyticsImg from "../../public/wordanalytics.png";
+import cisco from "../../public/cisc.png";
+import commerce from '../../public/commerce.jpg'
+import vent from "../../public/vent.jpg";
+import tour from "../../public/tour.jpg";
 export const links = [
     {
       name: "Home",
@@ -18,10 +19,7 @@ export const links = [
       name: "Skills",
       href: "#skills",
     },
-    {
-      name: "Experience",
-      href: "#experience",
-    },
+   
     {
       name: "Contact",
       href: "#contact",
@@ -29,25 +27,36 @@ export const links = [
   ] as const;
   export const projectsData = [
     {
-      title: "CorpComment",
+      title: "cisco",
       description:
-        "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-      imageUrl: corpcommentImg,
+        "I made this site for cisco students to register online.",
+      tags: ["React", "Express.js", "MongoDB", "Tailwind", "RTK query"],
+      imageUrl: cisco,
+      href:'https://cisco-registration.netlify.app/'
     },
     {
-      title: "rmtDev",
+      title: "commerce",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-      tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-      imageUrl: rmtdevImg,
+        "This is the first project i made after I learn tailwind css. ",
+      tags: ["React",  "Tailwind", "Context api"],
+      imageUrl: commerce,
+      href:'https://comfisloth.netlify.app/home'
     },
     {
-      title: "Word Analytics",
+      title: "vent",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-      imageUrl: wordanalyticsImg,
+        "Vent is website where users can talk about what they feel. It has many features including saving vent, liking, supporting, filtering user.",
+      tags: ["React", "Redux toolkit", "Express.js", "Material UI", "MongoDB"],
+      imageUrl: vent,
+      href:'https://vent-now.netlify.app/home'
+    },
+    {
+      title: "tour",
+      description:
+        "This was school project. it is made for tourists where they can find place to visit",
+      tags: ["React", "Express.js", "MongoDB", "Bootstarp", ],
+      imageUrl: tour,
+      href:'https://dankil-tour.netlify.app/'
     },
   ] as const;
   export const skillsData = [
@@ -63,12 +72,7 @@ export const links = [
     "Prisma",
     "MongoDB",
     "Redux",
-    "GraphQL",
-    "Apollo",
     "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
     "Framer Motion",
   ] as const;
   

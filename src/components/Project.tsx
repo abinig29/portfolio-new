@@ -1,11 +1,12 @@
-'use client'
+"use client";
 import React, { useRef } from "react";
 import { projectsData } from "@/lib/constant";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProp = (typeof projectsData)[number];
-const Project = ({ title, description, tags, imageUrl }: ProjectProp) => {
+const Project = ({ title, description, tags, imageUrl, href }: ProjectProp) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -15,20 +16,22 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProp) => {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <motion.div
-      className="group"
-      
+      className="group max-w-[550px] mx-auto my-8 bg-gray-600/20 border h-[300px] rounded-lg opacity-100 relative overflow-hidden text-[15px]"
       ref={ref}
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
     >
-      <div className="max-w-[550px] mx-auto my-8 bg-gray-600/20 border h-[300px] rounded-lg opacity-100 relative overflow-hidden text-[13px] ">
-        <div className="w-[50%] p-6 flex flex-col h-full  sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed font-Poppins text-black">
-            {description}
-          </p>
+      <a href={href} target="_black">
+        <div className="w-full  sm:w-[50%] p-6 flex flex-row sm:flex-col h-full  sm:group-even:ml-[18rem]">
+          <div>
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <p className="mt-2 leading-relaxed font-Poppins text-black">
+              {description}
+            </p>
+          </div>
+
           <ul className="flex flex-wrap mt-auto gap-2 ">
             {tags.map((tag, index) => (
               <li
@@ -58,7 +61,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProp) => {
          group-even:-left-48
         absolute hidden sm:block top-8 -right-48 w-[28.25rem] rounded-t-lg shadow-2xl"
         />
-      </div>
+      </a>
     </motion.div>
   );
 };
