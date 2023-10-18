@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/Footer";
 import ActiveSection from "@/context/activeSection";
+import { Toaster } from "react-hot-toast";
+
 
 const popin = Poppins({
   subsets: ["latin"],
@@ -24,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body className="bg-gray-50 min-h-screen">
+        <Toaster position='top-center' />
         <ActiveSection>
           <div className="fixed top-20 left-32 rounded-full w-[500px] h-[500px] bg-red-600/20 blur-3xl z-[-100]" />
           <Header />
