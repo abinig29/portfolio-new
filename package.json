@@ -28,6 +28,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "cypress": "^13.3.3",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
