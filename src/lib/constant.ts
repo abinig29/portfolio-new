@@ -48,7 +48,7 @@ export const links = [
         "Vent is website where users can talk about what they feel. It has many features including saving vent, liking, supporting, filtering user.",
       tags: ["React", "Redux toolkit", "Express.js", "Material UI", "MongoDB"],
       imageUrl: vent,
-      href:'https://do-vent.netlify.app/home'
+      href:'https://do-vent.netlify.app/'
     },
     {
       title: "tour",
