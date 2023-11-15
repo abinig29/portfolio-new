@@ -32,7 +32,7 @@ export const links = [
         "I made this site for cisco students to register online.",
       tags: ["React", "Express.js", "MongoDB", "Tailwind", "RTK query"],
       imageUrl: cisco,
-      href:'https://cisco-registration.netlify.app/'
+      href:'https://cisco-course-registration.netlify.app/'
     },
     {
       title: "commerce",
