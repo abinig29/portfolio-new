@@ -46,7 +46,8 @@ export const projectsData = [
       "Batelian is a platform that connects top remote developers with leading companies.",
     tags: ["React", "Nextjs", "React query", "headless ui", "Express.js", "Mongodb"],
     imageUrl: ba,
-    href: 'https://merine-business-navy.vercel.app/'
+    href: 'import m from "../../public/m.png'
+
   },
   {
     title: "5killo bookclub",
