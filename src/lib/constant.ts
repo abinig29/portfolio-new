@@ -4,6 +4,8 @@ import vent from "../../public/vent.jpg";
 import tour from "../../public/tour.jpg";
 import book from "../../public/b.png";
 import m from "../../public/m.png";
+import ba from "../../public/ba.png";
+
 
 
 export const links = [
@@ -36,6 +38,14 @@ export const projectsData = [
       "Business listing webiste where users can give reviews about businesses",
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: m,
+    href: 'https://merine-business-navy.vercel.app/'
+  },
+  {
+    title: "Batelian",
+    description:
+      "Batelian is a platform that connects top remote developers with leading companies.",
+    tags: ["React", "Nextjs", "React query", "headless ui", "Express.js", "Mongodb"],
+    imageUrl: ba,
     href: 'https://merine-business-navy.vercel.app/'
   },
   {
