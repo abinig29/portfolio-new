@@ -46,7 +46,7 @@ export const projectsData = [
       "Batelian is a platform that connects top remote developers with leading companies.",
     tags: ["React", "Nextjs", "React query", "headless ui", "Express.js", "Mongodb"],
     imageUrl: ba,
-    href: 'import m from "../../public/m.png'
+    href: 'https://batelian.com'
 
   },
   {
