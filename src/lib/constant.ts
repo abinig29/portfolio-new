@@ -38,7 +38,7 @@ export const projectsData = [
       "Business listing webiste where users can give reviews about businesses",
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: m,
-    href: 'https://merine-business-navy.vercel.app/'
+    href: 'https://merine-business.vercel.app/'
   },
   {
     title: "Batelian",
