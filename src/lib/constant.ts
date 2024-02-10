@@ -4,6 +4,8 @@ import vent from "../../public/vent.jpg";
 import tour from "../../public/tour.jpg";
 import book from "../../public/b.png";
 import m from "../../public/m.png";
+import afca from "../../public/afca.png.png";
+
 import ba from "../../public/ba.png";
 
 
@@ -39,6 +41,14 @@ export const projectsData = [
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: m,
     href: 'https://merine-business.vercel.app/'
+  },
+  {
+    title: "AFCA",
+    description:
+      "website made for afca event registration and organization. for demo use email-demoAdmin@gmail.com and pass-123123123",
+    tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+    imageUrl: afca,
+    href: 'https://event-frontend-personal.vercel.app/'
   },
   {
     title: "Batelian",
