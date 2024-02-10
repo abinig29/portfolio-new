@@ -4,7 +4,7 @@ import vent from "../../public/vent.jpg";
 import tour from "../../public/tour.jpg";
 import book from "../../public/b.png";
 import m from "../../public/m.png";
-import afca from "../../public/afca.png.png";
+import afca from "../../public/afca.png";
 
 import ba from "../../public/ba.png";
 
