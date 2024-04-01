@@ -5,6 +5,8 @@ import tour from "../../public/tour.jpg";
 import book from "../../public/b.png";
 import m from "../../public/m.png";
 import afca from "../../public/afca.png";
+import mela from "../../public/mela.png";
+
 
 import ba from "../../public/ba.png";
 
@@ -27,6 +29,10 @@ export const links = [
     name: "Skills",
     href: "#skills",
   },
+  {
+    name: "Services",
+    href: "#services",
+  },
 
   {
     name: "Contact",
@@ -40,7 +46,7 @@ export const projectsData = [
       "Business listing webiste where users can give reviews about businesses",
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: m,
-    href: 'https://merine-business.vercel.app/'
+    href: 'https://www.merinbd.com/'
   },
   {
     title: "AFCA",
@@ -49,6 +55,14 @@ export const projectsData = [
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: afca,
     href: 'https://event-frontend-personal.vercel.app/'
+  },
+  {
+    title: "Mela",
+    description:
+      "Mela will scrap throw many job portals and display them in proper manner with CTA",
+    tags: ["Python", "Scrappy", "Nextjs", "Prisma", "Pupteer", "Postgress"],
+    imageUrl: mela,
+    href: 'https://er-mela-dashboard.vercel.app/'
   },
   {
     title: "Batelian",
@@ -75,30 +89,7 @@ export const projectsData = [
     imageUrl: cisco,
     href: 'https://cisco-course-registration.netlify.app/'
   },
-  {
-    title: "commerce",
-    description:
-      "This is the first project i made after I learn tailwind css. ",
-    tags: ["React", "Tailwind", "Context api"],
-    imageUrl: commerce,
-    href: 'https://comfisloth.netlify.app/home'
-  },
-  {
-    title: "vent",
-    description:
-      "Vent is website where users can talk about what they feel. It has many features including saving vent, liking, supporting, filtering user.",
-    tags: ["React", "Redux toolkit", "Express.js", "Material UI", "MongoDB"],
-    imageUrl: vent,
-    href: 'https://do-vent.netlify.app/'
-  },
-  {
-    title: "tour",
-    description:
-      "This was school project. it is made for tourists where they can find place to visit",
-    tags: ["React", "Express.js", "MongoDB", "Bootstarp",],
-    imageUrl: tour,
-    href: 'https://dankil-tour.netlify.app/'
-  },
+
 ] as const;
 export const skillsData = [
   "HTML",
@@ -109,10 +100,32 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "Express.js",
   "Prisma",
-  "MongoDB",
-  "Redux",
-  "Express",
+  "Vue.js",
+  "Laravel",
   "Framer Motion",
 ] as const;
+
+
+export const service = [
+  {
+    description: " With expertise in MERN Stack, TypeScript, and Next.js, I can help build custom web apps that are optimized for performance, security, and scalability.",
+    tag: "Use latest tech stacks.",
+    title: "Web Application Development",
+    headerText: "I have experiance with  a lot of cool framerworks out there like React,Vue, Nodejs",
+  },
+  {
+    description: "With API development expertise, I can help build powerful and scalable APIs to connect your apps with any service you require.",
+    tag: "Scalable APIs.",
+    title: "API Development",
+    headerText: "Empowering Your Apps with Seamless Third-Party Integrations",
+  },
+  {
+    description: "As a UI/UX designer, I can help design and create intuitive user interfaces that ensure a seamless user experience.",
+    tag: "Intuitive Design",
+    title: "UI/UX Design",
+    headerText: "Crafting User-Focused Interfaces for Seamless App Experiences",
+  }
+] as const
+

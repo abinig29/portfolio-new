@@ -8,16 +8,16 @@ const Header = () => {
   const { active, setActive,setTimeOfLastClick } = useActiveSection();
   
   return (
-    <div className="fixed inset-x-0 top-0 h-20 pt-6  z-[999]">
+    <div className="fixed inset-x-0 top-0 h-20 pt-6  z-[10000000]">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className=" px-4 py-2 max-w-[400px] mx-auto bg-gray-100/90 h-[50px] shadow-lg rounded-full flex justify-between items-center  z-[999]"
+        className=" px-4 py-2 w-full sm:max-w-[500px] mx-auto bg-gray-100 h-[50px] shadow-lg rounded-full flex justify-between items-center  z-[999]"
       >
         {links.map((value,index) => (
           <div
           key={index}
-            className={clsx("px-3 py-1 relative rounded-full transition duration-800", {
+            className={clsx("sm:px-3 px-2 py-1 relative rounded-full transition duration-800", {
               "bg-gray-400/20": active === value.name,
             })}
           >

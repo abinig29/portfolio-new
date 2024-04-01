@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 
 const About = () => {
-const {ref}=useActive("About")
+  const { ref } = useActive("About")
   return (
     <motion.section
       ref={ref}
-      className="mb-20 max-w-[500px] mx-auto text-center leading-8 scroll-mt-28 px-4 sm:px-0"
+      className="mb-20 max-w-[500px] mx-auto text-center leading-8 scroll-mt-28 sm:mt-16 px-4 sm:px-0"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -18,6 +18,7 @@ const {ref}=useActive("About")
       }}
       id="about"
     >
+   
       <h3 className="text-3xl font-medium capitalize mb-8 text-center">
         About me
       </h3>
@@ -29,9 +30,9 @@ const {ref}=useActive("About")
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React,  Next.js, Node.js, Laravel, Vue.js
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
+        . I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
@@ -47,3 +48,5 @@ const {ref}=useActive("About")
 };
 
 export default About;
+
+

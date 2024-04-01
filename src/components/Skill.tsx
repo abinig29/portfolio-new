@@ -40,7 +40,7 @@ const Skill = () => {
             viewport={{
               once: true,
             }}
-            className="border rounded-full bg-gray-100 px-4 py-2"
+            className="border border-slate-400 rounded-full px-4 py-2 inline-flex animate-shimmer items-center justify-center    bg-[length:200%_100%] font-medium text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             {skill}
           </motion.div>

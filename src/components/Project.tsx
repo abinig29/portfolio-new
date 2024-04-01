@@ -16,15 +16,15 @@ const Project = ({ title, description, tags, imageUrl, href }: ProjectProp) => {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <motion.div
-      className="group max-w-[550px] mx-auto my-8 bg-gray-600/20 border h-[300px] rounded-lg opacity-100 relative overflow-hidden text-[15px]"
+      className="group my-8 bg-gray-600/20 border h-[300px] rounded-lg opacity-100 relative overflow-hidden text-[15px]"
       ref={ref}
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
     >
-      <a href={href} target="_black">
-        <div className="w-full  sm:w-[50%] p-6 flex flex-row sm:flex-col h-full  sm:group-even:ml-[18rem]">
+      <a href={href} target="_black" className="">
+        <div className="w-full  sm:w-[50%] p-6 flex flex-row sm:flex-col h-full  sm:group-even:ml-[14rem]">
           <div>
             <h3 className="text-2xl font-semibold">{title}</h3>
             <p className="mt-2 leading-relaxed font-Poppins text-black">
@@ -48,18 +48,18 @@ const Project = ({ title, description, tags, imageUrl, href }: ProjectProp) => {
           src={imageUrl}
           alt="project photo"
           className=" 
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
 
-         group-even:-left-48
-        absolute hidden sm:block top-8 -right-48 w-[28.25rem] rounded-t-lg shadow-2xl"
+            group-even:-left-48
+            absolute hidden sm:block top-8 -right-48 w-[25.25rem] rounded-t-lg shadow-2xl"
         />
       </a>
     </motion.div>
