@@ -1,11 +1,23 @@
-export function GridBackgroundDemo() {
+"use client";
+
+import { MaskContainer } from "./ui/svg-mask-effect";
+
+export function SVGMaskEffectDemo() {
     return (
-        <div className="h-[50rem] w-full bg-transparent  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-            {/* Radial gradient for the container to give a faded look */}
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-gray-50 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
-            <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-black py-8">
-                Backgrounds
-            </p>
+        <div className="h-[40rem] w-full flex items-center justify-center  overflow-hidden">
+            <MaskContainer
+                revealText={
+                    <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
+                        The first rule of MRR Club is you do not talk about MRR Club. The
+                        second rule of MRR Club is you DO NOT talk about MRR Club.
+                    </p>
+                }
+                className="h-[40rem] border rounded-md text-gray-700"
+            >
+                The first rule of <span className="text-red-500">MRR Club</span> is you
+                do not talk about MRR Club. The second rule of MRR Club is you DO NOT
+                talk about <span className="text-red-500">MRR Club</span>.
+            </MaskContainer>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import About from "@/components/About"
 import Contact from "@/components/Contact"
-import { GridBackgroundDemo } from "@/components/Demo"
+import { SVGMaskEffectDemo } from "@/components/Demo"
 import Home from "@/components/Home"
 import Projects from "@/components/Projects"
 import Service from "@/components/Service"

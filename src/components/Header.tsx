@@ -17,7 +17,7 @@ const Header = () => {
         {links.map((value,index) => (
           <div
           key={index}
-            className={clsx("sm:px-3 px-2 py-1 relative rounded-full transition duration-800", {
+            className={clsx("px-3 py-1 relative rounded-full transition duration-800", {
               "bg-gray-400/20": active === value.name,
             })}
           >
