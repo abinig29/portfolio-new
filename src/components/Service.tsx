@@ -24,7 +24,7 @@ const fadeInAnimationVariants = {
     }),
 };
 type ServiceProp = (typeof service)[number];
-export default function () {
+export default function Service() {
     return (
         <div>
             <h3 className="text-3xl font-medium capitalize mb-8 text-center">
