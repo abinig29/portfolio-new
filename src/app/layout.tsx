@@ -68,7 +68,7 @@ export default function RootLayout({
         <Toaster position='top-center' />
         <ActiveSection>
           {/* <div className="absolute hidden sm:block top-0 left-12 rounded-full w-[500px] h-[500px] bg-red-600/90  z-[-100]" /> */}
-          {/* <div className="absolute hidden sm:block bottom-6 right-12 rounded-full w-[100px] h-[100px] bg-red-600/90  z-[-100]" /> */}
+          {/* <div className="absolute hidden sm:block bottom-6 right-12 rounded-full w-[100px] h-[100px] bg-black  z-[-100]" /> */}
           {/* <div className="absolute hidden sm:block top-20 left-12 blur-3xl rounded-full w-[300px] h-[300px] bg-gray-200/20  z-[-100]" /> */}
 
           <Header />
