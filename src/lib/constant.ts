@@ -75,15 +75,6 @@ export const projectsData = [
     href: 'https://bookclub-5kilo.vercel.app/'
   },
   {
-    title: "AFCA",
-    description:
-      `The website was developed for AFCA event registration. 
-      For demonstration purposes, use the these credentials:   demoAdmin@gmail.com password - 123123123.`,
-    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: afca,
-    href: 'https://event-frontend-personal.vercel.app/'
-  },
-  {
     title: "Addis Astemari",
     description:
       `Addis Astemari helps schools and educators in creating 
@@ -91,6 +82,15 @@ export const projectsData = [
     tags: ["Nextjs", "Mantine ui", "Tailwindcss"],
     imageUrl: astmari,
     href: 'https://er-mela-dashboard.vercel.app/'
+  },
+  {
+    title: "AFCA",
+    description:
+      `The website was developed for AFCA event registration. 
+      For demonstration purposes, use the these credentials:   demoAdmin@gmail.com password - 123123123.`,
+    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+    imageUrl: afca,
+    href: 'https://event-frontend-personal.vercel.app/'
   },
 
   {
