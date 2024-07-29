@@ -27,7 +27,7 @@ const Project = ({ title, description, tags, imageUrl, href }: ProjectProp) => {
         <div className="w-full  sm:w-[50%] p-6 flex flex-row sm:flex-col h-full  sm:group-even:ml-[14rem]">
           <div>
             <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="mt-2 leading-relaxed font-Poppins text-black">
+            <p className="mt-1 leading-relaxed font-Poppins text-black text-sm">
               {description}
             </p>
           </div>

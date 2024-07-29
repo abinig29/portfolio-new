@@ -6,6 +6,10 @@ import book from "../../public/b.png";
 import m from "../../public/m.png";
 import afca from "../../public/afca.png";
 import mela from "../../public/mela.png";
+import yeabrak from "../../public/yeabrak.png";
+import rec from "../../public/rec.png";
+import astmari from "../../public/astmari.png";
+
 
 
 import ba from "../../public/ba.png";
@@ -41,54 +45,67 @@ export const links = [
 ] as const;
 export const projectsData = [
   {
-    title: "Mrine",
+    title: "Recognise design",
     description:
-      "Business listing webiste where users can give reviews about businesses",
-    tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: m,
-    href: 'https://www.merinbd.com/'
-  },
-  {
-    title: "AFCA",
-    description:
-      "website made for afca event registration and organization. for demo use email-demoAdmin@gmail.com and pass-123123123",
-    tags: ["React", "Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: afca,
-    href: 'https://event-frontend-personal.vercel.app/'
-  },
-  {
-    title: "Mela",
-    description:
-      "Mela will scrap throw many job portals and display them in proper manner with CTA",
-    tags: ["Python", "Scrappy", "Nextjs", "Prisma", "Pupteer", "Postgress"],
-    imageUrl: mela,
-    href: 'https://er-mela-dashboard.vercel.app/'
-  },
-  {
-    title: "Batelian",
-    description:
-      "Batelian is a platform that connects top remote developers with leading companies.",
-    tags: ["React", "Nextjs", "React query", "headless ui", "Express.js", "Mongodb"],
-    imageUrl: ba,
+      `This portfolio site for RecognizeDesign is crafted with the latest technologies,
+       emphasizing meticulous attention to animation and SEO.`,
+    tags: ["Atsrojs", "Tailwindcss", "Strapi cms",],
+    imageUrl: rec,
     href: 'https://batelian.com'
 
   },
+
+  {
+    title: "Yeabrak",
+    description:
+      `Yeabrak is pregnancy companion app, 
+      designed to offer expectant mothers personalized health
+       recommendations`,
+    tags: ["React.js", "React query", "Mantine ui", "Laravel"],
+    imageUrl: yeabrak,
+    href: 'https://app.yeabrak.com/'
+  },
+
   {
     title: "5killo bookclub",
     description:
-      "This site was made for 5kilo aait fellowship bookclub students",
+      "This site was developed for the 5kilo AAIT Fellowship Book Club students.",
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Nest.js", "Mongodb"],
     imageUrl: book,
     href: 'https://bookclub-next3-92wp.vercel.app/'
   },
   {
-    title: "cisco",
+    title: "AFCA",
     description:
-      "I made this site for AAIT cisco students to register online.",
-    tags: ["React", "Express.js", "MongoDB", "Tailwind", "RTK query"],
-    imageUrl: cisco,
-    href: 'https://cisco-course-registration.netlify.app/'
+      `The website was developed for AFCA event registration. 
+      For demonstration purposes, use the these credentials:   demoAdmin@gmail.com password - 123123123.`,
+    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+    imageUrl: afca,
+    href: 'https://event-frontend-personal.vercel.app/'
   },
+  {
+    title: "Addis Astemari",
+    description:
+      `Addis Astemari helps schools and educators in creating 
+      fully customizable teaching websites, as well as in building and selling online courses.`,
+    tags: ["Nextjs", "Mantine ui", "Tailwindcss"],
+    imageUrl: astmari,
+    href: 'https://er-mela-dashboard.vercel.app/'
+  },
+
+  {
+    title: "Merine",
+    description:
+      `Merine is dedicated to listing businesses across various categories, 
+      where users can explore detailed profiles, leave reviews, and rate their experiences. `,
+    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+    imageUrl: m,
+    href: 'https://www.merinbd.com/'
+  },
+
+ 
+
+
 
 ] as const;
 export const skillsData = [
@@ -99,12 +116,10 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-  "Git",
   "Express.js",
-  "Prisma",
-  "Vue.js",
-  "Laravel",
-  "Framer Motion",
+  "Nestjs",
+  "Django",
+  "Strapi cms",
 ] as const;
 
 

@@ -27,21 +27,18 @@ const About = () => {
           About me
         </h3>
         <p className="mb-3">
-          I am <span className="font-medium">Software enginnering</span> student
-          in Addis Ababa university.
-          <span className="italic"> My favorite part of programming</span> is the
-          problem-solving aspect. I <span className="underline">love</span> the
-          feeling of finally figuring out a solution to a problem. My core stack
+
+
+          I'm a passionate <span className="font-medium"> software engineer</span> with a love for problem-solving.
+          <span className="italic"> The thrill of discovering a solution to a</span> complex problem  is what drives me in programming.
+          My core stack
           is{" "}
           <span className="font-medium">
-            React,  Next.js, Node.js, Laravel, Vue.js
+            React,  Next.js, Node.js, Nestjs, Django
           </span>
           . I am always looking to
-          learn new technologies. I am currently looking for a{" "}
-          <span className="font-medium">full-time position</span> as a software
-          developer.
+          learn new technologies.
         </p>
-
         <p>
           <span className="italic">When I am not coding</span>, I enjoy watching
           movies, and reading books. I also enjoy{" "}
