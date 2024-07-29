@@ -29,7 +29,7 @@ const About = () => {
         <p className="mb-3">
 
 
-          I'm a passionate <span className="font-medium"> software engineer</span> with a love for problem-solving.
+          I am a passionate <span className="font-medium"> software engineer</span> with a love for problem-solving.
           <span className="italic"> The thrill of discovering a solution to a</span> complex problem  is what drives me in programming.
           My core stack
           is{" "}
