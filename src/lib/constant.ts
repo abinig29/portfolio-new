@@ -72,7 +72,7 @@ export const projectsData = [
       "This site was developed for the 5kilo AAIT Fellowship Book Club students.",
     tags: ["React", "Nextjs", "React query", "Shadcn ui", "Nest.js", "Mongodb"],
     imageUrl: book,
-    href: 'https://bookclub-next3-92wp.vercel.app/'
+    href: 'https://bookclub-5kilo.vercel.app/'
   },
   {
     title: "AFCA",
