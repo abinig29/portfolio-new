@@ -51,7 +51,7 @@ export const projectsData = [
        emphasizing meticulous attention to animation and SEO.`,
     tags: ["Atsrojs", "Tailwindcss", "Strapi cms",],
     imageUrl: rec,
-    href: 'https://batelian.com'
+    href: 'https://www.recognisedesign.com/'
 
   },
 
@@ -81,7 +81,7 @@ export const projectsData = [
       fully customizable teaching websites, as well as in building and selling online courses.`,
     tags: ["Nextjs", "Mantine ui", "Tailwindcss"],
     imageUrl: astmari,
-    href: 'https://er-mela-dashboard.vercel.app/'
+    href: 'https://www.addisastemari.com/'
   },
   {
     title: "AFCA",
@@ -103,7 +103,7 @@ export const projectsData = [
     href: 'https://www.merinbd.com/'
   },
 
- 
+
 
 
 
