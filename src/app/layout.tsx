@@ -25,9 +25,13 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Portfolio",
-    "React",
-    "Nodejs",
+    "Abel Nigus",
+    "Abel portfolio",
+    "Website developer in Ethiopia",
+    "Full-stack developer in Ethiopia",
+    "Full-stack developer",
+    "Ethiopian developer",
+    "MERN stack developer in Ethiopia"
   ],
   authors: [
     {
