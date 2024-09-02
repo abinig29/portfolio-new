@@ -55,16 +55,16 @@ export const projectsData = [
 
   },
 
-  {
-    title: "Yeabrak",
-    description:
-      `Yeabrak is pregnancy companion app, 
-      designed to offer expectant mothers personalized health
-       recommendations`,
-    tags: ["React.js", "React query", "Mantine ui", "Laravel"],
-    imageUrl: yeabrak,
-    href: 'https://app.yeabrak.com/'
-  },
+  // {
+  //   title: "Yeabrak",
+  //   description:
+  //     `Yeabrak is pregnancy companion app, 
+  //     designed to offer expectant mothers personalized health
+  //      recommendations`,
+  //   tags: ["React.js", "React query", "Mantine ui", "Laravel"],
+  //   imageUrl: yeabrak,
+  //   href: 'https://app.yeabrak.com/'
+  // },
 
   {
     title: "5killo bookclub",
