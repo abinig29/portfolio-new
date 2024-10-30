@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ActiveSection from "@/context/activeSection";
 import { Toaster } from "react-hot-toast";
 import { siteConfig } from "@/config/site";
+import Script from "next/script";
 
 
 const popin = Poppins({
@@ -68,6 +69,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <Script
+        src="https://datafa.st/js/script.js"
+        data-website-id="6722a5915dec9a6cf3c88dd1"
+        data-domain="abelnigus.com"
+        strategy="afterInteractive"
+        defer
+      />
       <body className="bg-gray-50 min-h-screen">
         <Toaster position='top-center' />
         <ActiveSection>
