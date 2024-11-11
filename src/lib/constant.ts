@@ -61,7 +61,7 @@ export const projectsData = [
       `Yeabrak is pregnancy companion app, 
       designed to offer expectant mothers personalized health
        recommendations`,
-    tags: ["React.js", "React query", "Mantine ui", "Laravel"],
+    tags: ["React.js", "React query", "Mantine ui", "Django"],
     imageUrl: yeabrak,
     href: 'https://app.yeabrak.com/'
   },
@@ -90,7 +90,7 @@ export const projectsData = [
       For demonstration purposes, use the these credentials:   demoAdmin@gmail.com password - 123123123.`,
     tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
     imageUrl: afca,
-    href: 'https://event-frontend-personal.vercel.app/'
+    href: 'https://purchase.afca.coffee/'
   },
 
   {
