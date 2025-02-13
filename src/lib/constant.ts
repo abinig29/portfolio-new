@@ -1,14 +1,12 @@
 import cisco from "../../public/cisc.png";
-import commerce from '../../public/commerce.jpg'
-import vent from "../../public/vent.jpg";
-import tour from "../../public/tour.jpg";
 import book from "../../public/b.png";
 import m from "../../public/m.png";
-import afca from "../../public/afca.png";
-import mela from "../../public/mela.png";
+import afca from "../../public/new-afca.png";
 import yeabrak from "../../public/yeabrak.png";
 import rec from "../../public/rec.png";
 import astmari from "../../public/astmari.png";
+import utrade from "../../public/utrade.png";
+
 
 
 
@@ -45,6 +43,23 @@ export const links = [
 ] as const;
 export const projectsData = [
   {
+    title: "AFCA",
+    description:
+      `comprehensive event management platform designed to simplify and optimize the event planning process. 
+     `,
+    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+    imageUrl: afca,
+    href: 'https://purchase.afca.coffee/'
+  },
+  {
+    title: "Utradie",
+    description:
+      `UTRADIE is a platform designed to support tradespeople at every stage of their career—from apprentices to business owners.`,
+    tags: ["React.js", "React query", "Shadcn UI", "PHP"],
+    imageUrl: utrade,
+    href: 'https://utradie.com/'
+  },
+  {
     title: "Recognise design",
     description:
       `This portfolio site for RecognizeDesign is crafted with the latest technologies,
@@ -56,25 +71,6 @@ export const projectsData = [
   },
 
   {
-    title: "Yeabrak",
-    description:
-      `Yeabrak is pregnancy companion app, 
-      designed to offer expectant mothers personalized health
-       recommendations`,
-    tags: ["React.js", "React query", "Mantine ui", "Django"],
-    imageUrl: yeabrak,
-    href: 'https://app.yeabrak.com/'
-  },
-
-  {
-    title: "5killo bookclub",
-    description:
-      "This site was developed for the 5kilo AAIT Fellowship Book Club students.",
-    tags: ["React", "Nextjs", "React query", "Shadcn ui", "Nest.js", "Mongodb"],
-    imageUrl: book,
-    href: 'https://bookclub-5kilo.vercel.app/'
-  },
-  {
     title: "Addis Astemari",
     description:
       `Addis Astemari helps schools and educators in creating 
@@ -83,25 +79,28 @@ export const projectsData = [
     imageUrl: astmari,
     href: 'https://www.addisastemari.com/'
   },
-  {
-    title: "AFCA",
-    description:
-      `The website was developed for AFCA event registration. 
-      For demonstration purposes, use the these credentials:   demoAdmin@gmail.com password - 123123123.`,
-    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: afca,
-    href: 'https://purchase.afca.coffee/'
-  },
 
-  {
-    title: "Merine",
-    description:
-      `Merine is dedicated to listing businesses across various categories, 
-      where users can explore detailed profiles, leave reviews, and rate their experiences. `,
-    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: m,
-    href: 'https://www.merinbd.com/'
-  },
+
+
+  // {
+  //   title: "5killo bookclub",
+  //   description:
+  //     "This site was developed for the 5kilo AAIT Fellowship Book Club students.",
+  //   tags: ["React", "Nextjs", "React query", "Shadcn ui", "Nest.js", "Mongodb"],
+  //   imageUrl: book,
+  //   href: 'https://bookclub-5kilo.vercel.app/'
+  // },
+
+
+  // {
+  //   title: "Merine",
+  //   description:
+  //     `Merine is dedicated to listing businesses across various categories, 
+  //     where users can explore detailed profiles, leave reviews, and rate their experiences. `,
+  //   tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
+  //   imageUrl: m,
+  //   href: 'https://www.merinbd.com/'
+  // },
 
 
 
