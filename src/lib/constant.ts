@@ -47,7 +47,7 @@ export const projectsData = [
     title: "Projetsolaire ",
     description:
       `all-in-one solar project management software solution with no subscription`,
-    tags: ["React.js", "React query", "Shadcn ui", "Tailwindcss", "Vite"],
+    tags: ["Vue.js", "Pinia", "Headless UI", "Tailwindcss", "Vite"],
     imageUrl: projetsolaire,
     href: 'https://projetsolaire.com/fr-FR'
   },
@@ -60,6 +60,14 @@ export const projectsData = [
     href: 'https://utradie.com/'
   },
   {
+    title: "Home Dispo",
+    description:
+      `a platform designed for real estate professionals, buyers, and lenders to connect, collaborate, and close deals more efficiently.`,
+    tags: ["Flask", "Tailwindcss", "SQLAlchemy"],
+    imageUrl: astmari,
+    href: 'https://homedispo.com/'
+  },
+  {
     title: "Recognise design",
     description:
       `This portfolio site for RecognizeDesign is crafted with the latest technologies,
@@ -70,16 +78,7 @@ export const projectsData = [
 
   },
 
-  {
-    title: "Addis Astemari",
-    description:
-      `Addis Astemari helps schools and educators in creating 
-      fully customizable teaching websites, as well as in building and selling online courses.`,
-    tags: ["Nextjs", "Mantine ui", "Tailwindcss"],
-    imageUrl: astmari,
-    href: 'https://www.addisastemari.com/'
-  },
-
+  
 
 
   // {

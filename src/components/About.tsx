@@ -34,7 +34,7 @@ const About = () => {
           My core stack
           is{" "}
           <span className="font-medium">
-            React,  Next.js, Node.js, Nestjs, Django
+            React,  Next.js, Node.js, Nestjs, Django, Flask
           </span>
           . I am always looking to
           learn new technologies.
