@@ -6,6 +6,7 @@ import yeabrak from "../../public/yeabrak.png";
 import rec from "../../public/rec.png";
 import astmari from "../../public/astmari.png";
 import utrade from "../../public/utrade.png";
+import projetsolaire from "../../public/projetsolaire.png";
 
 
 
@@ -43,13 +44,12 @@ export const links = [
 ] as const;
 export const projectsData = [
   {
-    title: "AFCA",
+    title: "Projetsolaire ",
     description:
-      `comprehensive event management platform designed to simplify and optimize the event planning process. 
-     `,
-    tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-    imageUrl: afca,
-    href: 'https://purchase.afca.coffee/'
+      `all-in-one solar project management software solution with no subscription`,
+    tags: ["React.js", "React query", "Shadcn ui", "Tailwindcss", "Vite"],
+    imageUrl: projetsolaire,
+    href: 'https://projetsolaire.com/fr-FR'
   },
   {
     title: "Utradie",
