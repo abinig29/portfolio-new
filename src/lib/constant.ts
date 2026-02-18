@@ -7,6 +7,7 @@ import rec from "../../public/rec.png";
 import astmari from "../../public/astmari.png";
 import utrade from "../../public/utrade.png";
 import projetsolaire from "../../public/projetsolaire.png";
+import homedispo from "../../public/homedispo.png"
 
 
 
@@ -64,7 +65,7 @@ export const projectsData = [
     description:
       `a platform designed for real estate professionals, buyers, and lenders to connect, collaborate, and close deals more efficiently.`,
     tags: ["Flask", "Tailwindcss", "SQLAlchemy"],
-    imageUrl: astmari,
+    imageUrl: homedispo,
     href: 'https://homedispo.com/'
   },
   {
@@ -113,11 +114,12 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Vue.js",
   "Node.js",
   "Express.js",
   "Nestjs",
   "Django",
-  "Strapi cms",
+  "Flask",
 ] as const;
 
 
