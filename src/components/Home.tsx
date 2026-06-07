@@ -1,139 +1,115 @@
 "use client";
-import Image from "next/image";
-import me from "../../public/me.jpg";
 import { motion } from "framer-motion";
-import useHover from "@/hook/use-hover";
-import { useRef } from "react";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import SectionDivider from "./SectionDivider";
 import useActive from "@/hook/use-active";
-import { MemoizedStars } from "./ui/star";
-import { cn } from "@/utils/cn";
 
+const stack = ["Next.js", "PostgreSQL", "Redis", "Docker", "TypeScript", "Python", "Bash"];
 
 const Home = () => {
   const { ref } = useActive("Home");
-  const photo = useRef<HTMLDivElement>(null);
-  const hero = useHover(photo, {
-    x: -60,
-    y: -45,
-    z: 30,
-  });
+
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="scroll-m-[100rem]">
-      <div
-        ref={photo}
-        className="min-h-[calc(100vh-80px)] pt-20 relative bg-grid-slate-300/40 ">
-        <MemoizedStars />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-gray-50 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
-        {/* <motion.h1
-            className="mb-10 mt-8 px-4 z-[2000] text-2xl font-medium !leading-[1.5] sm:text-3xl "
-            initial={{ opacity: 0, y: 100 }}
+    <section ref={ref} id="home" className="scroll-m-[100rem]">
+      <div className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center px-6 relative overflow-hidden">
+        {/* Subtle dot grid */}
+        <div className="absolute inset-0 bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:28px_28px] opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-transparent to-gray-50 pointer-events-none" />
+
+        <div className="relative z-10 text-center max-w-3xl mx-auto">
+          <motion.p
+            className="text-xs uppercase tracking-[0.35em] text-gray-400 mb-5 font-semibold"
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
           >
-            <span className="font-bold">Hello, I am Abel.</span>
-            I am a{" "}
-            <span className="font-bold">Full stack developer.</span> I enjoy building{" "}
-            <span className="italic underline">sites & apps</span> that are not only functional but also visually appealing and user-friendly.
-          </motion.h1> */}
+            Full Stack Engineer
+          </motion.p>
+
+          <motion.h1
+            className="text-6xl sm:text-8xl font-bold text-gray-900 mb-7 leading-[1.05] tracking-tight"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            Hi, I&apos;m<br />Biruk.
+          </motion.h1>
+
+          <motion.p
+            className="text-base sm:text-xl text-gray-600 mb-4 max-w-xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            I build complete, production-quality web applications from scratch.
+            Dashboards, data platforms, workflow tools, containerized systems.
+          </motion.p>
 
 
 
-        <motion.div
-          className={cn("relative  lg:h-[40rem] h-[80vh] flex flex-col justify-center   max-w-[1500px]  mx-auto  text-gray-700")}
-        >
+          {/* Stack pills */}
           <motion.div
-            className="w-[70%] hidden lg:flex left-1/2 px-52 -translate-x-1/2 absolute h-full  items-center justify-center   bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
-            animate={{
-              WebkitMaskPosition: `0px 30px`,
-              WebkitMaskSize: `${350}px`,
-            }}
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="max-w-4xl mx-auto text-center text-white text-2xl sm:text-3xl relative z-20"
-            >
-              <span className="font-bold">Hello, I am Abel.</span>
-              I am a{" "}
-              <span className="font-bold">Full stack developer.</span> I enjoy building{" "}
-              <span className="italic underline">sites & apps</span> that are not only functional but also visually appealing and user-friendly.
-            </motion.div>
-          </motion.div>
-
-          <motion.div className="sm:w-[70%] mx-auto lg:px-52 lg:h-full flex items-center justify-center  text-white"
-            initial={{ opacity: 0, y: 100 }}
+            className="flex flex-wrap justify-center gap-2 mb-10"
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
           >
-            <p className="max-w-4xl mx-auto text-slate-800 text-center   text-2xl  sm:text-3xl ">
-              <span className="font-bold">Hello, I am Abel.</span>
-              I am a{" "}
-              <span className="font-bold">Full stack developer.</span> I enjoy building{" "}
-              <span className="italic underline">sites & apps</span> that are not only functional but also visually appealing and user-friendly.
-            </p>
-
+            {stack.map((tech) => (
+              <span
+                key={tech}
+                className="text-xs font-medium border border-gray-200 text-gray-600 px-3 py-1 rounded-full bg-white"
+              >
+                {tech}
+              </span>
+            ))}
           </motion.div>
-          <div className="a lg:absolute lg:bottom-36 lg:left-1/2 lg:-translate-x-1/2 mt-8 lg:mt-0">
-            <Button />
-          </div>
 
-        </motion.div>
+          {/* CTA buttons */}
+          <motion.div
+            className="flex flex-wrap items-center justify-center gap-3"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <a
+              className="bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full flex items-center gap-2 hover:bg-gray-700 active:scale-95 transition"
+              href="/Biruk_Addis.pdf"
+              download
+            >
+              Download CV <HiDownload />
+            </a>
+            <Link
+              className="text-sm border border-gray-300 px-5 py-2.5 rounded-full flex items-center gap-2 text-gray-800 hover:border-gray-900 hover:bg-gray-100 active:scale-95 transition"
+              href="#contact"
+            >
+              Contact me <AiOutlineArrowRight />
+            </Link>
+            <a
+              className="p-2.5 border border-gray-200 text-gray-500 text-xl rounded-full hover:border-gray-900 hover:text-gray-900 active:scale-95 transition"
+              href="https://github.com/abinig29"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithubSquare />
+            </a>
+            <a
+              className="p-2.5 border border-gray-200 text-gray-500 text-xl rounded-full hover:border-gray-900 hover:text-gray-900 active:scale-95 transition"
+              href="https://www.linkedin.com/in/biruk-addis-284bb6317/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
+          </motion.div>
+        </div>
 
-        <SectionDivider delay={0.125} />
+        <SectionDivider delay={0.6} />
       </div>
-    </section >
+    </section>
   );
 };
 
 export default Home;
-
-
-
-const Button = () => {
-  return (
-    <motion.div
-      className="flex flex-col sm:flex-row items-center justify-center gap-4 z-[1000] px-4 text-lg font-medium"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        delay: 0.1,
-      }}
-    >
-      <a
-        className=" bg-white z-[1000]  px-4 py-2 shadow-lg  flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border"
-        href="/Abel Nigus New.pdf"
-        download
-      >
-        Download CV <HiDownload className="opacity-60 " />
-      </a>
-      <Link
-        className="px-4 py-2 border z-[1000]  bg-black text-white  font-Poppins shadow-md rounded-full flex gap-2 items-center hover:scale-110 active:scale-105 transition cursor-pointer"
-        href={"#contact"}
-      >
-        Contact me
-        <AiOutlineArrowRight />
-      </Link>
-      <a
-        className="bg-white p-3 text-gray-700 flex  shadow-lg  items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border"
-        href="https://github.com/abinig29"
-        target="_blank"
-      >
-        <FaGithubSquare />
-      </a>
-      <a
-        className="bg-white p-3 text-gray-700 flex  shadow-lg  items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border"
-        href="https://www.linkedin.com/in/abel-nigus-a486b1294/"
-        target="_blank"
-      >
-        <FaLinkedinIn />
-      </a>
-    </motion.div>
-  )
-}
-

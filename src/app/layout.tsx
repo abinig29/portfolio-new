@@ -26,21 +26,24 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Abel Nigus",
-    "Abel portfolio",
-    "Website developer in Ethiopia",
-    "Full-stack developer in Ethiopia",
+    "Biruk Addis",
+    "Biruk portfolio",
+    "Full Stack Engineer",
+    "Next.js developer",
+    "Redis",
+    "PostgreSQL",
+    "Docker",
+    "AI training data",
+    "AfterQuery",
     "Full-stack developer",
-    "Ethiopian developer",
-    "MERN stack developer in Ethiopia"
   ],
   authors: [
     {
-      name: "Abel nigus",
+      name: "Biruk Addis",
       url: siteConfig.url,
     },
   ],
-  creator: "Abel Nigus",
+  creator: "Biruk Addis",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },

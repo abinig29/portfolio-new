@@ -40,25 +40,16 @@ const Contact = () => {
       })
   }
   return (
-    <motion.section
+    <section
       ref={ref}
       id={"contact"}
-      initial={{
-        opacity: 0,
-        x: -100,
-      }}
-      whileInView={{
-        opacity: 1,
-        x: 1,
-      }}
-      transition={{
-        duration: 0.5,
-      }}
-      viewport={{
-        once: true,
-        amount: 0.6,
-      }}
-      className="max-w-[500px]  mb-16 mx-auto px-4 sm:px-0"
+      className="max-w-[500px] mb-16 mx-auto px-4 sm:px-0"
+    >
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.6 }}
     >
       <h3 className="text-3xl font-medium capitalize mb-8 text-center">
         Contact me
@@ -99,7 +90,8 @@ const Contact = () => {
           </div>
         </div>
       </form>
-    </motion.section>
+    </motion.div>
+    </section>
   );
 };
 

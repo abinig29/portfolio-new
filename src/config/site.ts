@@ -1,9 +1,9 @@
 
 
 export const siteConfig = {
-  name: "Abel's Portfolio",
+  name: "Biruk's Portfolio",
   description:
-    "Portfolio project containing projects that abel has been participating and build from scratch",
+    "Portfolio of Biruk Addis — Full Stack Engineer specializing in Next.js, Redis, PostgreSQL, and Docker",
   url: "https://abel-portfolio-site.vercel.app",
   links: {
     github: "https://github.com/abinig29/new",

@@ -1,21 +1,3 @@
-import cisco from "../../public/cisc.png";
-import book from "../../public/b.png";
-import m from "../../public/m.png";
-import afca from "../../public/new-afca.png";
-import yeabrak from "../../public/yeabrak.png";
-import rec from "../../public/rec.png";
-import astmari from "../../public/astmari.png";
-import utrade from "../../public/utrade.png";
-import projetsolaire from "../../public/projetsolaire.png";
-import homedispo from "../../public/homedispo.png"
-
-
-
-
-import ba from "../../public/ba.png";
-
-
-
 export const links = [
   {
     name: "Home",
@@ -37,76 +19,43 @@ export const links = [
     name: "Services",
     href: "#services",
   },
-
   {
     name: "Contact",
     href: "#contact",
   },
 ] as const;
+
 export const projectsData = [
   {
-    title: "Projetsolaire ",
+    title: "DataLayer",
     description:
-      `all-in-one solar project management software solution with no subscription`,
-    tags: ["Vue.js", "Pinia", "Headless UI", "Tailwindcss", "Vite"],
-    imageUrl: projetsolaire,
-    href: 'https://projetsolaire.com/fr-FR'
+      "A full-stack AI training data management platform with dataset versioning, real-time collaboration, quality control workflows, and an analytics dashboard.",
+    tags: ["Next.js", "PostgreSQL", "Redis", "Tailwind CSS", "TypeScript"],
+    href: "https://github.com/birukaddis/datalayer",
   },
   {
-    title: "Utradie",
+    title: "DevBox",
     description:
-      `UTRADIE is a platform designed to support tradespeople at every stage of their career—from apprentices to business owners.`,
-    tags: ["React.js", "React query", "Shadcn UI", "PHP"],
-    imageUrl: utrade,
-    href: 'https://utradie.com/'
+      "A containerized CLI challenge platform with multi-step debugging exercises, deterministic Bash test suites, and reproducible Docker environments for engineering assessments.",
+    tags: ["Docker", "Bash", "Python", "Linux", "CI/CD"],
+    href: "https://github.com/birukaddis/devbox",
+  },
+  {
+    title: "Projetsolaire",
+    description:
+      "All-in-one solar project management software solution with no subscription.",
+    tags: ["Vue.js", "Pinia", "Headless UI", "Tailwind CSS", "Vite"],
+    href: "https://projetsolaire.com/fr-FR",
   },
   {
     title: "Home Dispo",
     description:
-      `a platform designed for real estate professionals, buyers, and lenders to connect, collaborate, and close deals more efficiently.`,
-    tags: ["Flask", "Tailwindcss", "SQLAlchemy"],
-    imageUrl: homedispo,
-    href: 'https://homedispo.com/'
+      "A platform designed for real estate professionals, buyers, and lenders to connect, collaborate, and close deals more efficiently.",
+    tags: ["Flask", "Tailwind CSS", "SQLAlchemy"],
+    href: "https://homedispo.com/",
   },
-  {
-    title: "Recognise design",
-    description:
-      `This portfolio site for RecognizeDesign is crafted with the latest technologies,
-       emphasizing meticulous attention to animation and SEO.`,
-    tags: ["Atsrojs", "Tailwindcss", "Strapi cms",],
-    imageUrl: rec,
-    href: 'https://www.recognisedesign.com/'
-
-  },
-
-  
-
-
-  // {
-  //   title: "5killo bookclub",
-  //   description:
-  //     "This site was developed for the 5kilo AAIT Fellowship Book Club students.",
-  //   tags: ["React", "Nextjs", "React query", "Shadcn ui", "Nest.js", "Mongodb"],
-  //   imageUrl: book,
-  //   href: 'https://bookclub-5kilo.vercel.app/'
-  // },
-
-
-  // {
-  //   title: "Merine",
-  //   description:
-  //     `Merine is dedicated to listing businesses across various categories, 
-  //     where users can explore detailed profiles, leave reviews, and rate their experiences. `,
-  //   tags: ["Nextjs", "React query", "Shadcn ui", "Express.js", "Mongodb"],
-  //   imageUrl: m,
-  //   href: 'https://www.merinbd.com/'
-  // },
-
-
-
-
-
 ] as const;
+
 export const skillsData = [
   "HTML",
   "CSS",
@@ -117,30 +66,36 @@ export const skillsData = [
   "Vue.js",
   "Node.js",
   "Express.js",
-  "Nestjs",
   "Django",
   "Flask",
+  "Redis",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "Docker",
+  "Linux/Bash",
+  "Python",
 ] as const;
-
 
 export const service = [
   {
-    description: " With expertise in MERN Stack, TypeScript, and Next.js, I can help build custom web apps that are optimized for performance, security, and scalability.",
-    tag: "Use latest tech stacks.",
-    title: "Web Application Development",
-    headerText: "I have experiance with  a lot of cool framerworks out there like React,Vue, Nodejs",
+    description:
+      "I build complete, production-quality web applications from scratch — Next.js frontends with server-side rendering, Redis caching layers, and optimized PostgreSQL databases, all wired together for responsive user experiences.",
+    tag: "Next.js · Redis · SQL",
+    title: "Full-Stack Application Development",
+    headerText: "End-to-end applications: dashboards, workflow tools, data platforms",
   },
   {
-    description: "With API development expertise, I can help build powerful and scalable APIs to connect your apps with any service you require.",
-    tag: "Scalable APIs.",
-    title: "API Development",
-    headerText: "Empowering Your Apps with Seamless Third-Party Integrations",
+    description:
+      "I design and develop high-quality, diverse software applications that serve as training examples for AI models — spanning different architectures, domains, and feature sets including auth, real-time data, and complex business logic.",
+    tag: "Diverse Codebases.",
+    title: "AI Training Data Engineering",
+    headerText: "Production-quality apps that push the boundaries of AI training datasets",
   },
   {
-    description: "As a UI/UX designer, I can help design and create intuitive user interfaces that ensure a seamless user experience.",
-    tag: "Intuitive Design",
-    title: "UI/UX Design",
-    headerText: "Crafting User-Focused Interfaces for Seamless App Experiences",
-  }
-] as const
-
+    description:
+      "I design containerized development environments, multi-step CLI exercises with deterministic test suites, and CI/CD pipelines — ensuring consistency, reproducibility, and clear documentation across complex systems.",
+    tag: "Docker · Bash · Linux",
+    title: "DevOps & Systems Engineering",
+    headerText: "Reliable, reproducible environments from local Docker to production CI",
+  },
+] as const;
